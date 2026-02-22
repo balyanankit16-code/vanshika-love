@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ░░ FULLSCREEN PHOTO WALL ░░ -->
+  <div class="photo-wall">
+    <div class="photo-grid">
+      <div class="photo-cell"><img src="images/photo1.jpeg" alt="Memory 1"></div>
+      <div class="photo-cell"><img src="images/photo2.jpeg" alt="Memory 2"></div>
+      <div class="photo-cell"><img src="images/photo3.jpeg" alt="Memory 3"></div>
+      <div class="photo-cell"><img src="images/photo4.jpeg" alt="Memory 4"></div>
+      <div class="photo-cell"><img src="images/photo5.jpeg" alt="Memory 5"></div>
+      <div class="photo-cell"><img src="images/photo6.jpeg" alt="Memory 6"></div>
+      <div class="photo-cell"><img src="images/photo7.jpeg" alt="Memory 7"></div>
+      <div class="photo-cell"><img src="images/photo8.jpeg" alt="Memory 8"></div>
+      <div class="photo-cell"><img src="images/photo9.jpeg" alt="Memory 9"></div>
+      <div class="photo-cell"><img src="images/photo10.jpeg" alt="Memory 10"></div>
+      <div class="photo-cell"><img src="images/photo11.jpeg" alt="Memory 11"></div>
+      <div class="photo-cell"><img src="images/photo12.jpeg" alt="Memory 12"></div>
+    </div>
+    <!-- Rich dark overlay with vignette -->
+    <div class="wall-overlay"></div>
+  </div>
+
+  <!-- ░░ CANVAS HEARTS ░░ -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- ░░ CONFETTI ░░ -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ░░ SCROLL PROGRESS ░░ -->
+  <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar"></div></div>
+
+  <!-- ░░ FLOATING QUOTE ░░ -->
+  <div id="floatingQuote" class="floating-quote"></div>
+
+  <!-- ░░ MUSIC ░░ -->
+  <audio id="bgMusic" loop>
+    <source src="music/Main Rang Sharbaton Ka Phata Poster Nikhla Hero 128 Kbps.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- ░░ MAIN CONTENT ░░ -->
+  <div class="page-wrap">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-red">LOVE</span>
+        <span class="logo-script">Vanshika ❤️ Ankit</span>
+      </div>
+    </header>
+
+    <!-- ░░ HERO SECTION ░░ -->
+    <section class="hero">
+      <div class="hero-inner glass">
+        <p class="pre-title">✦ Today is Special ✦</p>
+        <h1 class="hero-title">Happy Birthday<br><em>My Love</em></h1>
+        <p class="hero-quote">"Every love story is beautiful, but ours is my favorite."</p>
+        <div class="typing-wrap">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </div>
+        <button id="openHeartBtn" class="cta-btn">
+          <span>Open My Heart</span>
+          <i class="fas fa-heart"></i>
+        </button>
+        <p class="hero-sub">Unlimited love, memories, and more · Forever and always ❤️</p>
+      </div>
+    </section>
+
+    <!-- ░░ PROPOSAL LETTER ░░ -->
+    <section class="proposal">
+      <div class="glass proposal-card">
+        <p class="label-tag">A Letter Just for You</p>
+        <h2 class="section-script">My Dearest Love,</h2>
+        <p class="letter-body">
+          From the moment you came into my life, everything became more beautiful. Your laughter is my favorite melody, your smile my greatest sight. I still remember the first time I saw you – time stood still, and I knew something had changed forever. You are the most caring, wonderful person I've ever met. I want to spend the rest of my days making you happy, holding your hand through every season. So here I am, with all my heart, asking you...
+        </p>
+        <h3 class="proposal-q">Will you stay with me forever?</h3>
+        <div class="proposal-btns">
+          <button id="yesBtn" class="cta-btn">YES <i class="fas fa-heart"></i></button>
+          <button id="alwaysBtn" class="cta-btn outline">ALWAYS <i class="fas fa-infinity"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ REASONS I LOVE YOU ░░ -->
+    <section class="reasons">
+      <p class="label-tag center">Hover to reveal</p>
+      <h2 class="section-title center"><span class="script-red">10 Reasons</span> I Love You</h2>
+      <div class="flip-grid">
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">🌸</div><div class="flip-back">Your radiant smile lights up every room</div></div></div>
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">💖</div><div class="flip-back">Your kindness melts my heart daily</div></div></div>
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">✨</div><div class="flip-back">Your eyes — they say everything without words</div></div></div>
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">🎶</div><div class="flip-back">Your laugh is my favorite sound</div></div></div>
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">🌹</div><div class="flip-back">Your hugs feel like home</div></div></div>
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">🌟</div><div class="flip-back">Your strength inspires me every day</div></div></div>
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">💫</div><div class="flip-back">Your voice is the calmest thing I know</div></div></div>
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">🌙</div><div class="flip-back">Your dreams make me dream bigger</div></div></div>
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">☕</div><div class="flip-back">Our lazy morning conversations</div></div></div>
+        <div class="flip-card"><div class="flip-inner"><div class="flip-front">💞</div><div class="flip-back">Simply everything that is <em>you</em></div></div></div>
+      </div>
+    </section>
+
+    <!-- ░░ SURPRISE HEART ░░ -->
+    <section class="surprise-section">
+      <p class="label-tag center">One last thing...</p>
+      <button id="lastHeartBtn" class="pulse-heart">❤️</button>
+      <div id="surpriseMessage" class="surprise-msg hidden"></div>
+    </section>
+
+    <!-- ░░ FOOTER ░░ -->
+    <footer>
+      <p class="footer-script">You are my forever.</p>
+      <p class="footer-sub">Made with <i class="fas fa-heart"></i> by Your Forever · Ankit</p>
+    </footer>
+
+  </div><!-- /page-wrap -->
+
+  <!-- ░░ CAKE BIRTHDAY MODAL ░░ -->
+  <div id="cakeModal" class="modal-overlay">
+    <div class="modal-box glass">
+      <button class="modal-close" id="closeCakeModal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="cake-emoji-wrap">
+          <span class="big-cake">🎂</span>
+          <div class="cake-hearts">
+            <i class="fas fa-heart" style="--d:0s;--l:10%"></i>
+            <i class="fas fa-heart" style="--d:0.3s;--l:30%"></i>
+            <i class="fas fa-heart" style="--d:0.6s;--l:50%"></i>
+            <i class="fas fa-heart" style="--d:0.9s;--l:70%"></i>
+            <i class="fas fa-heart" style="--d:1.2s;--l:90%"></i>
+          </div>
+        </div>
+        <h2 class="modal-title">Happy Birthday My Love! 🎉</h2>
+        <p class="modal-sub">Wishing you the most beautiful day, always.</p>
+      </div>
+
+      <div class="wishes-grid">
+        <div class="wish-card"><i class="fas fa-heart"></i><p>You're the most amazing person I know!</p><span>— Your Love</span></div>
+        <div class="wish-card"><i class="fas fa-star"></i><p>May all your dreams come true!</p><span>— Forever Yours</span></div>
+        <div class="wish-card"><i class="fas fa-crown"></i><p>You deserve all the happiness!</p><span>— Your Soulmate</span></div>
+        <div class="wish-card"><i class="fas fa-gem"></i><p>You're precious beyond measure!</p><span>— Your Everything</span></div>
+        <div class="wish-card"><i class="fas fa-infinity"></i><p>My love for you is endless!</p><span>— Your Forever</span></div>
+        <div class="wish-card"><i class="fas fa-sun"></i><p>You light up my world every day!</p><span>— Your Sunshine</span></div>
+      </div>
+
+      <div class="modal-emojis">❤️ 🎉 🎂 🎈 🎁 ✨</div>
+    </div>
+  </div>
+
+  <!-- ░░ LIGHTBOX ░░ -->
+  <div id="lightbox" class="lightbox">
+    <button class="lb-close">&times;</button>
+    <img id="lightboxImg" class="lb-img" alt="memory">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
