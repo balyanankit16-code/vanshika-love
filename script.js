@@ -280,11 +280,7 @@
   lbClose?.addEventListener('click', () => lightbox.classList.remove('show'));
   lightbox?.addEventListener('click', e => { if (e.target === lightbox) lightbox.classList.remove('show'); });
 
-<<<<<<< HEAD
  
-=======
-  /* ── ESC KEY ── */
->>>>>>> a644d4fa7cf5924968b7f0a3530acc867f6eab83
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       lightbox?.classList.remove('show');
