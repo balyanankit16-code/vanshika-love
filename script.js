@@ -83,7 +83,7 @@
   ══════════════════════════════════════ */
   const typedEl = document.getElementById('typed-text');
   const messages = [
-    "You are the most beautiful part of my world   You are my world.",
+    "You are the most beautiful part of my world ! You are my world.",
     "Every day with you is a gift I cherish.",
     "My heart is yours, today and always.",
     "Happy birthday, my angel. ❤️"
@@ -309,3 +309,4 @@
   });
 
 })();
+
